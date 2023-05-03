@@ -47,9 +47,9 @@
 <template>
   <div class="main">
   <div class="todo-container">
-  <h1>CÔNG VIỆC CẦN LÀM</h1>
+  <h1>CUỐN SÁCH ĐÃ ĐỌC</h1>
   <form class="form" @submit.prevent="addTodo()">
-      <label>Nhập nội dung cần làm </label>
+      <label>NHẬP TÊN SÁCH</label>
       <input class="input"
           v-model="newTodo"
           name="newTodo"
@@ -60,7 +60,7 @@
   </form>
   <div class="todo-container">
     <hr>
-  <h2>DANH SÁCH CÔNG VIỆC<Canvas></Canvas><Canvas></Canvas><Canvas></Canvas></h2>
+    <div class="col text-center mt-2"> <H2>DANH SÁCH CÁC CUỐN SÁCH ĐÃ ĐỌC</H2><Canvas></Canvas> </div>
   <ul>
       <li
           v-for="(todo, index) in todos"
